@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/register_bgl"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20.0dip"
+        android:background="#00000000" >
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150.0dip"
+        android:layout_height="150.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/user_head" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp" >
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hintemail" 
+            android:background="@drawable/et_register1"/>
+
+        <EditText
+            android:id="@+id/creatname"
+            android:layout_marginTop="0.2dp"
+            android:layout_below="@id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:hint="@string/hintusername" 
+            android:background="@drawable/et_register2"/>
+
+        <EditText
+            android:id="@+id/creatpwd"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="0.2dp"
+            android:layout_below="@id/creatname"
+            android:hint="@string/hintuserpwd"
+            android:inputType="textPassword" 
+            android:background="@drawable/et_register3"/>
+
+        <Button
+            android:id="@+id/creat_user_button"
+            android:layout_below="@id/creatpwd"
+            android:layout_width="230.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_login_shap"
+            android:text="@string/create"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

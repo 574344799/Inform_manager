@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/register_bgl"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20.0dip"
+        android:background="#00000000" >
+
+        <Button
+            android:id="@+id/forget_back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/forget_email"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/et_foeget1"
+            android:hint="@string/hintemail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/forget_yzm"
+            android:layout_width="150dp"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/forget_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_foeget1"
+            android:hint="@string/hintyam" />
+
+        <Button
+            android:id="@+id/forget_sent_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/forget_email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/forget_yzm"
+            android:background="@drawable/btn_login_shap"
+            android:text="@string/sent_btn"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/forget_newpsd"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/forget_yzm"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_foeget1"
+            android:hint="@string/newpwd" />
+
+        <Button
+            android:id="@+id/forget_sure_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/forget_newpsd"
+            android:background="@drawable/btn_login_shap"
+            android:text="@string/sure_btn"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>
